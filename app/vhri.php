@@ -4,7 +4,7 @@ include 'class/Groupe.php'; // Gestion du Groupe
 include 'class/Membre.php'; // Membre d'un groupe
 include 'functions/gc7.php'; // Petites fonctions
 
-$gr = new Groupe('Vous');
+$gr = new Groupe('Momo');
 
 // Tentative de REnommer un fondateur rejettée par le fait que la classe Groupe est un singleton
 // $gr = new Groupe('Vous2');
@@ -16,11 +16,14 @@ if (!isset($gr)) {
 // 0 = id  du membre parrain
 // (En grand en mode 1, mode construction !)
 
-$gr->add('Pier', 0);
-$gr->add('Pol', 0);
-$gr->add('Jack', 0);
-$gr->add('Polo', 3);
-$gr->add('Pierot', 3);
+$gr->add('Abou', 0);
+$gr->add('Aziz', 0);
+$gr->add('Nazir', 2);
+$gr->add('Pier', 3);
+// $gr->add('Pol', 0);
+// $gr->add('Jack', 0);
+// $gr->add('Polo', 3);
+// $gr->add('Pierot', 3);
 
 
 // Tentative d'ajouter un membre en indiquant un id de parrain inexistant
@@ -28,7 +31,7 @@ $gr->add('Pierot', 3);
 
 // Tests: Création aléatoire de $nbre membres
 
-$nombre = 2; //5
+$nombre = 0; //5
 
 for ($i = 1; $i < $nombre + 1; $i++) {
     $fakePseudo = 'Untel_' . $i;
