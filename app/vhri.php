@@ -16,10 +16,12 @@ if (!isset($gr)) {
 // 0 = id  du membre parrain
 // (En grand en mode 1, mode construction !)
 
-// $gr->add('Pier', 0);
-// $gr->add('Paul', 0);
-// $gr->add('Jack', 0);
-// $gr->add('Pierot', 1);
+$gr->add('Pier', 0);
+$gr->add('Pol', 0);
+$gr->add('Jack', 0);
+$gr->add('Polo', 3);
+$gr->add('Pierot', 3);
+
 
 // Tentative d'ajouter un membre en indiquant un id de parrain inexistant
 // $gr->add('Juda', 999);
